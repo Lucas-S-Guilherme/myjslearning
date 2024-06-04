@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Javascript - Uma visão geral</h1>
+
+    <h2>Configurando o ambiente</h2>
+        <p>Estou utilizando o Firefox e o editor VS Code</p>
+    <p>Instalado o Node.js através do site oficial</p>
+
+    <h2>Usando servidores web</h2>
+    <p>Escolhi o http-server do Node.js, através do <a href="https://www.npmjs.com/package/http-server">http-server</a></p>
+
+    <h2>Básico sobre o Javascript</h2>
+
+    <p>Há duas maneiras de usar o código JavaScript.</p>
+
+    <p class="destacarTexto">Inserir o código direto no html:</p>
+
+    <pre>
+        <code>
+            &lt;script&gt;
+            alert('Olá Mundo!');
+            &lt;/script&gt;
+        </code>
+    </pre>
+
+    <p class="destacarTexto">Inserir o código direto por meio de um arquivo .css:</p>
+
+    <pre>
+        <code>
+            &lt;script src="01-HelloWorld.js"&gt; &lt;/script&gt;
+        </code>
+    </pre>
+
+    <h1>Variáveis</h1>
+
+    <a href="Variaveis.js">Arquivo com Código JavaScript</a>
+
+    <pre>
+        <code>
+            console.log('num: ' + num);           
+        </code>
+    </pre>
+
+    <button onclick="showResult()">Clique para executar o código, do console concatenando (+)</button>
+
+    <div class="output" id="output"></div>
+
+    <script>
+        function showResult(){
+            var num = 55;
+            var message = 'num: ' + num;            
+            console.log(message);
+            document.getElementById('output').innerText = message;
+        }
+    </script>
+
+    <pre>
+        <code>
+            A outra forma de utilizar o método console é a abaixo:
+
+            console.log('num: ' , num);            
+        </code>
+    </pre>
+
+
+    <button onclick="mostrarResultado()">Clique para executar o código, do console mostrando descrição de um objeto (,)</button>
+
+    <div class="saida" id="saida"></div>
+
+    <script>
+        function mostrarResultado(){
+            var num2 = 5;  
+            var message = 'num: ' , num2;        
+            console.log(message);
+            document.getElementById('saida').innerText = message;
+        }
+    </script>
+
+    <h3>Escopo das variáveis</h3>
+    <p>Diz respeito ao local em que podemos acessar a variável ou função (quando for o caso).</p>
+
+    
+
+
+
+</body>
+</html>
