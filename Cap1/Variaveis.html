@@ -86,8 +86,137 @@
     <h3>Escopo das variáveis</h3>
     <p>Diz respeito ao local em que podemos acessar a variável ou função (quando for o caso).</p>
 
-    
+    <h2>Verdadeiro e falso</h2>
+    <p>Existem diversas ocasiões que o JS pode retornar valor true ou false, não dependendo somente de se tratar de uma variável do tipo boolean</p>
 
+    <table>
+        <tr>
+            <th>Tipo de Valor</th>
+            <th>Resultado</th>
+        </tr>
+
+        <tr>
+            <td>undefined</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td>null</td>
+            <td>false</td>
+        </tr>
+        <tr>
+            <td>Boolean</td>
+            <td>True or false</td>
+        </tr>
+        <tr>
+            <td>Number</td>
+            <td>O resultado é false para +0, -0 ou NaN; caso contrário, é true</td>
+        </tr>
+        <tr>
+            <td>String</td>
+            <td>O resultado é false se a string for vazia (o tamanho é 0); caso contrário, é true (tamanho >= 1)</td>
+        </tr>
+        <tr>
+            <td>Object</td>
+            <td>True</td>
+        </tr>
+    </table>
+
+    <h2> Funções dos operadores de igualdade (== e ===)  </h2>
+
+        <p>O operador == pode causar confusão, melhor utilizar === quando se quer comparar valores de tipo igual, e se forem do mesmo objeto.</p>
+
+
+    <h2>Estruturas de controle</h2>
+
+    <h3> Instruções condicionais</h3>
+    <p>Pode ser utilizado somento para quando a condição for true:</p>
+
+    <pre>
+        <code>
+            var num = 1;
+            if (num === 1){
+                console.log('num is equal to 1');
+            }
+        </code>
+    </pre>
+
+    <p>O tradicional if e else:</p>
+    <pre><code>
+        var num = 1;
+            if (num === 1){
+                console.log('num is equal to 1');
+            } else {
+                console.log('num is not equal to 1, the value of num is' + num);
+            }
+    </code></pre>
+
+    <p>Ou o operador ternário ?</p>
+
+    <pre><code>
+        Por exemplo essa instrução:
+            if (num === 1){
+                num--;
+            } else{
+                num++;
+            }
+
+        Pode ser feito com o ternário dessa forma:
+            (num === 1) ? num-- : num++;
+    </code></pre>
+
+    <h3>switch case é igual ao c#</h3>
+    <pre><code>
+        var mont = 5;
+
+    </code></pre>
+  
+    <h2> Ler algo digitado pelo usuário:
+    </h2>
+    <p>
+        Para atribuir o que for digitado pelo usuário a uma variável em Node.js usando o módulo readline, você pode fazer isso dentro da função de retorno de chamada fornecida para o método question(). Aqui está um exemplo simples:
+    </p>
+    <img src="img/readlineJS.png" alt="">
+
+    <p>Após fazer o código acima, para executar digite: <i> node nomeDoScript.js</i> </p>
+
+        <h2>Laços</h2>
+
+        <p>for, while e do while, identicos aos do C#</p>
+
+
+    <h2>Funções</h2>
+
+    <pre><code>
+        // funções no js
+
+        function digaOla(){
+            console.log('Olá!!!!');
+        }
+
+        digaOla();
+
+        //Passar argumentos para uma função:
+
+        function saida(texto){
+            console.log(texto);
+        }
+
+        //Para usar a função, passa-se o argumento
+        saida('Eaee!!');
+
+        //Pode usar mais de um argumento
+        saida('Fala fi', 'Eae mano'); // só um argumento é usado.
+    </code></pre>
+
+    <h2>POO no JavaScript</h2>
+    <p>
+        Ver o arquivo <a href="poo.js"></a>
+    </p>
+
+    <h2>Depuração e ferramentas</h2>
+    Estudar mais sobre isso, porque o livro foi bem raso.
+
+    
 
 
 </body>
